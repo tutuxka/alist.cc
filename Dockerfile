@@ -4,4 +4,4 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "-docker" ]
+RUN curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
